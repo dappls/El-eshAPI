@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "id": "eleshapi",
-  "version": "1.0-SNAPSHOT",
-  "name": "API_301",
+  "version": "1.0.0",
+  "name": "El'eshAPI",
   "description": "",
   "authors": [],
   "contact": {},
@@ -27,6 +27,7 @@
       "environment": "client"
     }
   ],
+  "accessWidener": "eleshapi.accesswidener",
   "depends": {
     "fabricloader": ">=0.18.4",
     "fabric-api": "*",

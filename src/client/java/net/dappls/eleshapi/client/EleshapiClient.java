@@ -6,5 +6,7 @@ public class EleshapiClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+
+
     }
 }

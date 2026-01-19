@@ -4,7 +4,10 @@
   "package": "net.dappls.eleshapi.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "PreventFallDamageMixin"
+    "PreventFallDamageMixin",
+    "PreventEatingMixin",
+    "ModifyMovementMixin",
+    "PreventRidingMixin"
   ],
   "injectors": {
     "defaultRequire": 1

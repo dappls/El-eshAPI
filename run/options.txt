@@ -107,7 +107,7 @@ startedCleanly:true
 musicToast:"never"
 musicFrequency:"DEFAULT"
 key_key.attack:key.mouse.left
-key_key.use:key.mouse.right
+key_key.use:key.keyboard.backslash
 key_key.forward:key.keyboard.w
 key_key.left:key.keyboard.a
 key_key.back:key.keyboard.s

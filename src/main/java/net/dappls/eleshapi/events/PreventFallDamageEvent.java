@@ -8,7 +8,6 @@ import net.fabricmc.fabric.api.util.TriState;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.world.World;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -17,7 +16,6 @@ import java.util.List;
 @FunctionalInterface
 public interface PreventFallDamageEvent {
     Event<PreventFallDamageEvent> EVENT = EventFactory.createArrayBacked(PreventFallDamageEvent.class, events ->
-
             (world, entity, fallDistance, damagePerDistance, damageSource) -> {
         List<PreventFallDamageEvent> sortedEvents = new ArrayList<>(Arrays.asList(events));
         sortedEvents.sort(Comparator.comparingInt(PreventFallDamageEvent::getPriority));

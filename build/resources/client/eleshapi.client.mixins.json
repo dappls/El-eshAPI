@@ -4,6 +4,7 @@
   "package": "net.dappls.eleshapi.client.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
+    "ReplaceHeartTexturesMixin"
   ],
   "injectors": {
     "defaultRequire": 1

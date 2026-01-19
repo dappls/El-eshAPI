@@ -27,6 +27,7 @@
       "environment": "client"
     }
   ],
+  "accessWidener": "eleshapi.accesswidener",
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric-api": "*",
