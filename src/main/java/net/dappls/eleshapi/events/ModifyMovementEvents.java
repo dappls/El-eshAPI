@@ -2,19 +2,15 @@ package net.dappls.eleshapi.events;
 
 import net.fabricmc.fabric.api.event.Event;
 import net.fabricmc.fabric.api.event.EventFactory;
-import net.fabricmc.fabric.api.util.TriState;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.math.Vec3d;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
 public class ModifyMovementEvents {
-    /*
-     * Copyright (c) MoriyaShiine. All Rights Reserved.
-     */
+
         private ModifyMovementEvents() {
         }
 
@@ -52,13 +48,5 @@ public class ModifyMovementEvents {
             }
 
             Vec3d modify(Vec3d velocity, LivingEntity entity);
-        }
-
-
-        @FunctionalInterface
-        public interface PreventSprintingEvent {
-            default int getPriority() {return 1000;}
-
-            TriState preventsSprinting(LivingEntity entity);
         }
 }
