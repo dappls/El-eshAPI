@@ -1,0 +1,12 @@
+/give Player9 eleshapi:item
+/give Player568 eleshapi:block
+/setblock -164 72 19 eleshapi:block
+/enchant Player501 eleshapi:test22
+/enchant Player979 eleshapi:test
+/enchant Player979 eleshapi:test22
+/enchant Player281 eleshapi:yipee
+/give Player148 eleshapi:item
+/gamemode survival
+/effect give Player205 minecraft:saturation infinite 255 true
+/gamemode creative
+/effect give Player205 minecraft:night_vision

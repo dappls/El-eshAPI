@@ -1,0 +1,33 @@
+ComponentType:
+
+    public static final ComponentType<BlockPos> COORDINATES =
+            register("coordinates", builder -> builder.codec(BlockPos.CODEC));
+
+
+Status effect:
+
+    public static final RegistryEntry<StatusEffect> SLIMEY = registerStatusEffect("slimey",
+            new SlimeyEffect(StatusEffectCategory.NEUTRAL, 0x36ebab)
+                    .addAttributeModifier(EntityAttributes.MOVEMENT_SPEED,
+                            Identifier.of(TutorialMod.MOD_ID, "slimey"), -0.25f,
+                            EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+
+
+
+Particle:
+    public static final SimpleParticleType PINK_GARNET_PARTICLE =
+            registerParticle("pink_garnet_particle", FabricParticleTypes.simple());
+
+
+Potion:
+    public static final RegistryEntry<Potion> SLIMEY_POTION = registerPotion("slimey_potion",
+            new Potion("slimey_potion", new StatusEffectInstance(ModEffects.SLIMEY, 1200, 0)));
+
+
+Sound:
+    public static final SoundEvent MAGIC_BLOCK_FALL = registerSoundEvent("magic_block_fall");
+
+
+EnchantmentEffect:
+    public static final MapCodec<? extends EnchantmentEntityEffect> LIGHTNING_STRIKER =
+                               registerEntityEffect("lightning_striker", LightningStrikerEnchantmentEffect.CODEC);

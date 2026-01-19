@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "eleshapi",
+  "version": "1.0-SNAPSHOT",
+  "name": "API_301",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/eleshapi/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "net.dappls.eleshapi.client.EleshapiDataGenerator"
+    ],
+    "client": [
+      "net.dappls.eleshapi.client.EleshapiClient"
+    ],
+    "main": [
+      "net.dappls.eleshapi.Eleshapi"
+    ]
+  },
+  "mixins": [
+    "eleshapi.mixins.json",
+    {
+      "config": "eleshapi.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "fabric-api": "*",
+    "minecraft": "1.21.11"
+  }
+}

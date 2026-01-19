@@ -1,0 +1,29 @@
+package net.dappls.eleshapi.Registries.enchantments;
+
+import com.mojang.serialization.MapCodec;
+import net.dappls.eleshapi.Registries.RegistryHelper;
+import net.minecraft.enchantment.EnchantmentEffectContext;
+import net.minecraft.enchantment.effect.EnchantmentEntityEffect;
+import net.minecraft.entity.Entity;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.util.math.Vec3d;
+
+public class TemplateEnchantmentEffect implements EnchantmentEntityEffect {
+
+    public static final MapCodec<TemplateEnchantmentEffect> CODEC = MapCodec.unit(TemplateEnchantmentEffect::new);
+
+    public static final MapCodec<? extends EnchantmentEntityEffect> TEMPLATE_EFFECT = RegistryHelper.registerEntityEffect(
+            "Template",CODEC); //Register this in registry class
+
+    @Override
+    public void apply(ServerWorld world, int level, EnchantmentEffectContext context, Entity user, Vec3d pos) {
+        if(level == 1) {
+
+        }
+    }
+
+    @Override
+    public MapCodec<? extends EnchantmentEntityEffect> getCodec() {
+        return CODEC;
+    }
+}
