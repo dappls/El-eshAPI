@@ -1,0 +1,23 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:talked_to_villager": 1,
+      "minecraft:time_since_rest": 183,
+      "minecraft:walk_one_cm": 1507,
+      "minecraft:total_world_time": 1133,
+      "minecraft:leave_game": 1,
+      "minecraft:damage_taken": 130,
+      "minecraft:boat_one_cm": 57,
+      "minecraft:play_time": 917,
+      "minecraft:deaths": 1,
+      "minecraft:time_since_death": 87
+    },
+    "minecraft:killed_by": {
+      "minecraft:creeper": 1
+    },
+    "minecraft:used": {
+      "minecraft:acacia_boat": 1
+    }
+  },
+  "DataVersion": 4671
+}

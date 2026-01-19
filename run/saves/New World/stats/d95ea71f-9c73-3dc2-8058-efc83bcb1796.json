@@ -1,0 +1,35 @@
+{
+  "stats": {
+    "minecraft:picked_up": {
+      "minecraft:sweet_berries": 1,
+      "minecraft:acacia_boat": 1,
+      "minecraft:wheat_seeds": 1
+    },
+    "minecraft:dropped": {
+      "minecraft:sweet_berries": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 4279,
+      "minecraft:walk_one_cm": 1617,
+      "minecraft:walk_under_water_one_cm": 35,
+      "minecraft:damage_taken": 80,
+      "minecraft:boat_one_cm": 861,
+      "minecraft:play_time": 4279,
+      "minecraft:jump": 53,
+      "minecraft:time_since_death": 4279,
+      "minecraft:drop": 1,
+      "minecraft:sprint_one_cm": 1604,
+      "minecraft:fall_one_cm": 1225,
+      "minecraft:total_world_time": 24143,
+      "minecraft:fly_one_cm": 7125,
+      "minecraft:walk_on_water_one_cm": 869
+    },
+    "minecraft:used": {
+      "minecraft:acacia_boat": 1,
+      "minecraft:sweet_berries": 1,
+      "minecraft:water_bucket": 2,
+      "minecraft:bucket": 2
+    }
+  },
+  "DataVersion": 4671
+}
