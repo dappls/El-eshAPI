@@ -18,7 +18,7 @@ import net.minecraft.util.Identifier;
 import java.util.function.Function;
 import java.util.function.UnaryOperator;
 
-public class RegistryHelper {
+public class EleRegistryHelper {
 
     public static Item registerItem(String name,Function<Item.Settings,Item> function) {
         return Registry.register(Registries.ITEM, Identifier.of(Eleshapi.MOD_ID,name), function.apply(

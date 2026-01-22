@@ -11,7 +11,7 @@
   "environment": "*",
   "entrypoints": {
     "fabric-datagen": [
-      "net.dappls.eleshapi.client.EleshapiDataGenerator"
+      "net.dappls.eleshapi.EleshapiDataGenerator"
     ],
     "client": [
       "net.dappls.eleshapi.client.EleshapiClient"
